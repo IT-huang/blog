@@ -1,0 +1,3 @@
+taskset -c 1 ./tools/perf/perf stat -e dTLB-load-misses cat >/dev/null &  
+
+rdmsr -p 1 0x186
